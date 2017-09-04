@@ -25,24 +25,22 @@ subjecttestdata <- read.table("test/subject_test.txt")
 xtestdata <- read.table("test/X_test.txt")
 ytestdata <- read.table("test/y_test.txt")
 
-completedataset <- rbind(cbind(subjecttraindata, xtraindata, ytraindata),
-                         cbind(subjecttestdata, xtestdata, ytestdata)
-)
+completedataset <- rbind(cbind(subjecttraindata, xtraindata, ytraindata),cbind(subjecttestdata, xtestdata, ytestdata))
 #2. Extracts only the measurements on the mean and standard deviation
 #for each measurement
 #As we got complete data set we need the assign column names from 
 #features text file which  v2 column contain 561 names where
 #as complete set got 563 where 562 and 563 are labels and subject data
 
-# read features, don't convert text labels to factors
+# read features
 features <- read.table("features.txt", as.is = TRUE)
 
 colnames(completedataset) <- c("subject", features[, 2], "activity")
 
-# determine columns of data set to keep based on column name...
+# determine columns of data set to keep 
 stdmeancolumns<- grepl("mean|std", colnames(completedataset))
 
-# ... and keep data in these columns only
+# data in these columns only
 stdmeandataset <- completedataset[, stdmeancolumns]
 
 #3. Uses descriptive activity names to name the activities in the data set
