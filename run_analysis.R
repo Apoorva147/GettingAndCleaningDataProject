@@ -81,5 +81,5 @@ library(dplyr)
 completedatasettidydata<-group_by(completedataset,subject,activity)%>%
 summarise_all(funs(mean))
 
-write.table(completedatasettidydata, "tidy_data2.txt", row.names = FALSE, 
+write.table(completedatasettidydata, "tidy_data.txt", row.names = FALSE, 
             quote = FALSE)
