@@ -7,7 +7,7 @@
 #-Train/subject_train.txt'
 #- 'test/X_test.txt': Test set.
 #- 'test/y_test.txt': Test labels.
-#-Test/subject_test.txt'
+#-Test/subject_test.txt' 
 
 #As x_train.txt and x_test.txt are similar data we need to do row 
 #bind which as same number columns As y_train.txt and y_test.txt are 

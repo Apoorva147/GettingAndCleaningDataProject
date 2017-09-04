@@ -66,7 +66,7 @@ completedatasetcolumns <- gsub("Acc", "Accelerometer", completedatasetcolumns)
 completedatasetcolumns <- gsub("Gyro", "Gyroscope", completedatasetcolumns)
 completedatasetcolumns <- gsub("Mag", "Magnitude", completedatasetcolumns)
 completedatasetcolumns <- gsub("Freq", "Frequency", completedatasetcolumns)
-
+ 
 
 
 # 5. Create second independent tidy data set with average  variable for each activity

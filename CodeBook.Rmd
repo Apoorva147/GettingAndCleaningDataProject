@@ -31,7 +31,7 @@
 # read activity labels
 #use descriptive activity name to activities in the data set ( in our data
 #set its labels column).Descriptive activity name are stored in activity_labels.txt
-
+ 
 
 
 
